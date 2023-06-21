@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Delights Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+
+</head>
+
+<style>
+    .bg-custom {
+        background-color: #f38701ff;
+    }
+
+    .bg-custombodybg {
+        background: linear-gradient( to bottom right, #F37413, #F38701, #F7A400, #616D3D, #2F4D2A);;
+    }
+
+    .custom-size {
+        width: 150px;
+        height: auto;
+    }
+
+    .custom-img {
+        width: 500px; 
+        height: auto; 
+    }
+</style>
+
+<body>
+    <section class="section-content bg-custom">
+        <div class="col-3 contact-item mx-5">
+            <div class="row justify-content-start">
+                <ul class="contact-details d-flex bg-transparent justify-content-between mt-1">
+                    <a class="contact-number border border-light rounded p-2 hover" href="#">+63 966 288 3710</a>
+                    <a class="contact-email border border-light rounded p-2 hover"
+                        href="#">gourmet.delights@gmail.com</a>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="header-content-fluid bg-custom">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-between">
+                <div class="col-sm-auto">
+                    <img src="./logo.png" alt="website-logo" class="img-fluid logo-img custom-size">
+                </div>
+                <div class="col-sm-auto">
+                    <hr>
+                    <nav class="navbar navbar-expand-lg bg-light">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="#">Home</a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">About</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Menu
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Appetizer</a></li>
+                                  <li><a class="dropdown-item" href="#">Salads</a></li>
+                                  <li><a class="dropdown-item" href="#">Main Course</a></li>
+                                  <li><a class="dropdown-item" href="#">Sides</a></li>
+                                  <li><a class="dropdown-item" href="#">Dessert</a></li>
+                                  <li><a class="dropdown-item" href="#">Beverages</a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Services
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Catering Services</a></li>  
+                                    <li><a class="dropdown-item" href="#">Plated Services</a></li>  
+                                    <li><a class="dropdown-item" href="#">Semi Silver Services</a></li> 
+                                    <li><a class="dropdown-item" href="#">Full Silver Services</a></li> 
+                                    <li><a class="dropdown-item" href="#">Gueridon Services</a></li>   
+                                    <li><a class="dropdown-item" href="#">Buffet Services</a></li>  
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-section text-center bg-custombodybg">
+        <h2>Gourmet Delights offers delicious treats for all occasions</h2>
+        <h1>Let us Cater your Event!</h1>
+        <div class="text-center p-3 m-2">
+            <p>From intimate gatherings to large corporate events, our team of experienced chefs and waiters specialize in creating a custom catering experience to make your event unforgettable.</p>
+        </div>
+        <div class="contact-us text-center">
+            <button type="button" class="btn btn-dark mb-3" data-toggle="modal" data-target="#contactModal">Taste It!</button>
+        </div>
+
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title d-block mx-auto" id="contactModalLabel">Contact Form</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="eventType">Type of Event:</label>
+                                <select class="form-control" id="eventType" required>
+                                    <option value="">Select event type</option>
+                                    <option value="private-party">Private Party</option>
+                                    <option value="birthday">Birthday Party</option>
+                                    <option value="corporate">Corporate Events</option>
+                                    <option value="wake">Wake</option>
+                                    <option value="debut">Debut</option>
+                                    <option value="kiddie-party">Kiddie Party</option>
+                                    <option value="in-house">In-house</option>
+                                    <option value="food-order">Food Order</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="pax">No. of Pax:</label>
+                                <input type="number" class="form-control" id="pax" placeholder="No. of Pax" required min="20">
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact">Contact</label>
+                                <input type="text" class="form-control" id="contact" placeholder="Contact Number" required pattern="[0-9]+" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" placeholder="Message" rows="4" required></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="carouselImageIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselImageIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselImageIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselImageIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner text-center">
+                <div class="carousel-item active">
+                    <img src="./mainbody-image1.jpg" class="d-block mx-auto w-50  rounded" alt="Image1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./mainbody-image2.jpeg" class="d-block mx-auto w-50 rounded" alt="Image2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./mainbody-image3.jpg" class="d-block mx-auto w-50  rounded" alt="Image3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselImageIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselImageIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!--About Section-->
+
+    <section id="about-us fluid bg-custom">
+        <div class="about-section text-center p-5 mt-5 mb-5 bg-custom">
+            <h1>What We Offer</h1>
+            <p>Gourmet Delights provides catering services to suit every occasion. We bring the best of flavor and elegance to ensure your special day or night is nothing short of memorable.</p>
+            <div class="row align-items-end bg-custom  mt-4">
+                <div class="col text-center">
+                    <div class="card d-flex justify-content-center" style="width: 18rem;">
+                        <i class="fa-regular fa-money-bill-1 fa-shake fa-xl"></i>
+                        <div class="card-body">
+                          <h5 class="card-title">Column 1</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col text-center">
+                    <div class="card d-flex justify-content-center" style="width: 18rem;">
+                        <i class="fas fa-money-bill"></i>
+                        <div class="card-body">
+                          <h5 class="card-title">Column 1</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col text-center">
+                    <div class="card d-flex justify-content-center" style="width: 18rem;">
+                        <i class="fas fa-money-bill"></i>
+                        <div class="card-body">
+                          <h5 class="card-title">Column 1</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col text-center">
+                    <div class="card d-flex justify-content-center" style="width: 18rem;">
+                        <i class="fas fa-money-bill"></i>
+                        <div class="card-body">
+                          <h5 class="card-title">Column 1</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+           </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-..." crossorigin="anonymous"></script>
+
+</body>
+
+</html>
